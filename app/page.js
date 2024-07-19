@@ -1,9 +1,15 @@
-import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
-export default function Home() {
+
+const  Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     
-    </main>
+    <div className="bg-red-500 h-96 w-96">
+    
+    <Link href="/contact"></Link>
+
+    </div>
   );
 }
+
+export default Home ;
