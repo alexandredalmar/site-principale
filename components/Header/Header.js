@@ -3,32 +3,32 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="h-auto bg-slate-500 flex items-center flex-row justify-around">
-      <div className="h-24 flex items-center">
+    <header className='flex h-auto flex-row items-center justify-around bg-slate-500'>
+      <div className='flex h-24 items-center'>
         <h1>LOGO</h1>
       </div>
       <nav>
-        <ul className="flex flex-row gap-8">
+        <ul className='flex flex-row gap-8'>
           <li>
             <Link
-              className="p-2 bg-orange-500 hover:bg-orange-300 transition-all text-white rounded-sm"
-              href="#"
+              className='rounded-sm bg-orange-500 p-2 text-white transition-all hover:bg-orange-300'
+              href='#'
             >
               Accueil
             </Link>
           </li>
           <li>
             <Link
-              className="p-2 bg-orange-500 hover:bg-orange-300 transition-all  text-white rounded-sm"
-              href="#"
+              className='rounded-sm bg-orange-500 p-2 text-white transition-all hover:bg-orange-300'
+              href='#'
             >
               Nos prestations
             </Link>
           </li>
           <li>
             <Link
-              className="p-2 bg-orange-500 hover:bg-orange-300 transition-all text-white rounded-sm"
-              href="#"
+              className='rounded-sm bg-orange-500 p-2 text-white transition-all hover:bg-orange-300'
+              href='#'
             >
               Contact
             </Link>
