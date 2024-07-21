@@ -37,7 +37,7 @@ const Header = () => {
           </ul>
         </li> */}
             <li>
-              <a>Item 2</a>
+              <a>Nos modeles</a>
             </li>
             <li>
               <Link href='/contact'>Contact</Link>
@@ -49,7 +49,7 @@ const Header = () => {
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal px-1'>
           <li>
-            <Link href='/'>Accueil</Link>
+            <Link href='/'>Nos services</Link>
           </li>
           {/* <li>
         <details>
@@ -61,7 +61,7 @@ const Header = () => {
         </details>
       </li> */}
           <li>
-            <a>Item 2</a>
+            <a>Contact</a>
           </li>
           <li>
             <Link href='/contact'>Contact</Link>
