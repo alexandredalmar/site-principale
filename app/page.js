@@ -1,6 +1,5 @@
-import Link from "next/link";
 import React from "react";
-import HomePage from "@/view/home";
+import HomePage from "@/views/home";
 
 const Home = () => {
   return <HomePage />;
