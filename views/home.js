@@ -1,3 +1,5 @@
+import SectionHomeGrid from "@/components/Sections/SectionsHome/SectionsHomeGrid/SectionHomeGrid";
+import Grid from "@/components/ui/Grid";
 import React from "react";
 
 const HomePage = () => {
@@ -17,13 +19,9 @@ const HomePage = () => {
           </div>
 
           <h2>Nos modeles</h2>
-
-          <div className='gridContainer'>
-            <div className='block'> Modem - 1</div>
-            <div className='block'>Model - 2</div>
-            <div className='block'>Model - 3</div>
-            <div className='block'> Model - 4</div>
-          </div>
+          <Grid>
+            <SectionHomeGrid />
+          </Grid>
 
           <h3 className='title'>Ils nous ont fait confiance</h3>
 
