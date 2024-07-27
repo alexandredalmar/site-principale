@@ -42,13 +42,10 @@ const Header = () => {
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal px-1'>
           <li>
-            <Link href='/'>Nos services</Link>
+            <Link href='/nos-services'>Nos services</Link>
           </li>
           <li>
             <Link href='/nos-modeles'>Nos modèles</Link>
-          </li>
-          <li>
-            <a>Contact</a>
           </li>
           <li>
             <Link href='/contact'>Contact</Link>
