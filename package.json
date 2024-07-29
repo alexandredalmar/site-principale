@@ -1,6 +1,6 @@
 {
-  "name": "site-principale",
-  "version": "0.1.0",
+  "name": "y",
+  "version": "y",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -23,5 +23,10 @@
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.4.1"
-  }
+  },
+  "description": "y",
+  "main": ":q",
+  "repository": "y",
+  "license": "y",
+  "author": "y"
 }
