@@ -29,15 +29,8 @@ const Header = () => {
             <li>
               <Link href='/'>Accueil</Link>
             </li>
-            {/* <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li> */}
             <li>
-              <a>Nos modeles</a>
+              <Link href='/nos-modeles'>Nos modèles</Link>
             </li>
             <li>
               <Link href='/contact'>Contact</Link>
@@ -49,19 +42,10 @@ const Header = () => {
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal px-1'>
           <li>
-            <Link href='/'>Nos services</Link>
+            <Link href='/nos-services'>Nos services</Link>
           </li>
-          {/* <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li> */}
           <li>
-            <a>Contact</a>
+            <Link href='/nos-modeles'>Nos modèles</Link>
           </li>
           <li>
             <Link href='/contact'>Contact</Link>
