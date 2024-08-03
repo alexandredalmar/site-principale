@@ -11,6 +11,10 @@
     "vince": "./script/push.sh"
   },
   "dependencies": {
+    "@vibrant/image-node": "^3.2.1-alpha.1",
+    "flowbite": "^2.4.1",
+    "lucide-react": "^0.424.0",
+    "multer": "^1.4.5-lts.1",
     "next": "14.2.5",
     "node-vibrant": "^3.2.1-alpha.1",
     "react": "^18",
@@ -25,6 +29,5 @@
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.4.1"
-  },
-
+  }
 }
