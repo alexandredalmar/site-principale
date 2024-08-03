@@ -1,3 +1,4 @@
+import { Home } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -30,6 +31,12 @@ const Header = () => {
               <Link href='/'>Accueil</Link>
             </li>
             <li>
+              <Link href='/nos-services'>Nos services</Link>
+            </li>
+            <li>
+              <Link href='/mon-futur-site'>Mon futur site</Link>
+            </li>
+            <li>
               <Link href='/nos-modeles'>Nos modèles</Link>
             </li>
             <li>
@@ -37,7 +44,9 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className='btn btn-ghost text-xl'>daisyUI</a>
+        <Link href='/' className='btn btn-ghost text-xl'>
+          <Home />
+        </Link>
       </div>
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal px-1'>
