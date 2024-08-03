@@ -4,7 +4,7 @@ import React from "react";
 const SectionCards = ({ colors }) => {
   return (
     <section className='my-12'>
-      <Grid>
+      <div className='flex flex-wrap justify-center gap-8'>
         <div
           className='card w-96 bg-primary text-primary-content'
           style={{ backgroundColor: colors.darkVibrant }}
@@ -41,7 +41,7 @@ const SectionCards = ({ colors }) => {
             </div>
           </div>
         </div>
-      </Grid>
+      </div>
     </section>
   );
 };

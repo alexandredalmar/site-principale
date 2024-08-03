@@ -7,7 +7,7 @@ const SectionFooter = ({ colors }) => {
         backgroundColor: colors.lightVibrant,
         color: colors.darkVibrant,
       }}
-      className='footer bg-base-200 p-10 text-base-content'
+      className='footer flex flex-wrap gap-12 bg-base-200 p-10 text-base-content'
     >
       <nav>
         <h6 className='footer-title'>Services</h6>
