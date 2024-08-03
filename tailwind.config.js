@@ -13,9 +13,17 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "button-primary": "#ec4899" /* pink*/,
+        "button-primary-hover": "#1E40AF",
+        "button-secondary": "#6B7280",
+        "button-secondary-hover": "#4B5563",
+        "button-danger": "#DC2626",
+        "button-danger-hover": "#B91C1C",
+      },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("flowbite/plugin")],
 
   daisyui: {
     themes: ["light"], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
