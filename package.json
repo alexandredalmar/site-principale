@@ -1,6 +1,6 @@
 {
-  "name": "site-principale",
-  "version": "0.1.0",
+  "name": "y",
+  "version": "y",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,6 +11,7 @@
     "push": "./script/push.sh"
   },
   "dependencies": {
+    "flowbite": "^2.4.1",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18"
@@ -23,5 +24,10 @@
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.4.1"
-  }
+  },
+  "description": "y",
+  "main": ":q",
+  "repository": "y",
+  "license": "y",
+  "author": "y"
 }

@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className='navbar bg-base-100'>
+    <header className='navbar bg-black'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
@@ -37,7 +37,7 @@ const Header = () => {
           </ul>
         </li> */}
             <li>
-              <a>Item 2</a>
+              <a>Nos modeles</a>
             </li>
             <li>
               <Link href='/contact'>Contact</Link>
@@ -49,7 +49,7 @@ const Header = () => {
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal px-1'>
           <li>
-            <Link href='/'>Accueil</Link>
+            <Link href='/'>Nos services</Link>
           </li>
           {/* <li>
         <details>
@@ -61,7 +61,7 @@ const Header = () => {
         </details>
       </li> */}
           <li>
-            <a>Item 2</a>
+            <a>Contact</a>
           </li>
           <li>
             <Link href='/contact'>Contact</Link>
