@@ -14,18 +14,11 @@ const HomePage = () => {
 
           <SectionHomeIntro />
 
-          <h2 className='w-full py-16 text-center text-5xl sm:text-6xl'>
-            Nos modeles
-          </h2>
-
-          <Grid>
-            <SectionHomeGrid />
-          </Grid>
+          <SectionHomeGrid />
 
           <h3 className='w-full py-16 text-center text-5xl sm:text-6xl'>
             Ils nous ont fait confiance
           </h3>
-
         </div>
       </div>
     </div>
