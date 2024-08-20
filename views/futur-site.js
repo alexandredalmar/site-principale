@@ -1,12 +1,7 @@
-import SectionUpload from "@/components/Sections/SectionsOurServices/SectionUpload/SectionUpload";
 import React from "react";
 
 const FuturSitePage = () => {
-  return (
-    <div>
-      <SectionUpload />
-    </div>
-  );
+  return <div>FuturSitePage</div>;
 };
 
 export default FuturSitePage;
