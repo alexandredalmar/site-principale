@@ -1,11 +1,16 @@
+import SectionOurServicesBanner from "@/components/Sections/SectionsOurServices/SectionOurServicesBanner/SectionOurServicesBanner";
+import SectionOurServicesCard from "@/components/Sections/SectionsOurServices/SectionOurServicesCard/SectionOurServicesCard";
+import SectionOurServicesImageText from "@/components/Sections/SectionsOurServices/SectionOurServicesImageText/SectionOurServicesImageText";
 import SectionPrice from "@/components/Sections/SectionsOurServices/SectionPrice/SectionPrice";
-import SectionUpload from "@/components/Sections/SectionsOurServices/SectionUpload/SectionUpload";
+import { Section } from "lucide-react";
 import React from "react";
 
 const OurServicesPage = () => {
   return (
     <div>
-      <SectionUpload />
+      {/* <SectionOurServicesBanner /> */}
+      <SectionOurServicesImageText />
+      <SectionOurServicesCard />
       <SectionPrice />
     </div>
   );
