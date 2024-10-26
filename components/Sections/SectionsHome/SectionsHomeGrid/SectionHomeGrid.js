@@ -1,5 +1,8 @@
+"use client";
+
 import Grid from "@/components/ui/Grid";
 import React from "react";
+import { motion } from "framer-motion";
 
 const items = [
   {
@@ -22,6 +25,17 @@ const items = [
   },
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: -100 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.3,
+    },
+  }),
+};
+
 const SectionHomeGrid = () => {
   return (
     <>
@@ -29,10 +43,14 @@ const SectionHomeGrid = () => {
         Nos modeles
       </h2>
       <Grid>
-        {items.map((item) => (
-          <div
+        {items.map((item, index) => (
+          <motion.div
             key={item.title}
             className='card card-compact w-96 border-2 border-solid border-white bg-black p-5 shadow-xl'
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+            custom={index}
           >
             <figure>
               <img src={item.src} alt='' />
@@ -41,12 +59,12 @@ const SectionHomeGrid = () => {
               <h2 className='card-title'>{item.title}</h2>
               <p>{item.text}</p>
               <div className='card-actions justify-start'>
-                <button className='text-md hover:bg-pink-400" mr-4 mt-4 rounded-lg border-2 border-transparent bg-pink-500 px-4 py-2 uppercase text-white'>
+                <button className='text-md hover:bg-pink-400 mr-4 mt-4 rounded-lg border-2 border-transparent bg-pink-500 px-4 py-2 uppercase text-white'>
                   {item.btn}
                 </button>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </Grid>
     </>
