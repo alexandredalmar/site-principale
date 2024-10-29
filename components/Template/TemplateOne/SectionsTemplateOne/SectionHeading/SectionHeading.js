@@ -1,10 +1,10 @@
 import React from "react";
 
-const SectionHeading = ({ colors }) => {
+const SectionHeading = ({ colors, selectedColor }) => {
   return (
     <section>
       <div
-        style={{ backgroundColor: colors.darkVibrant }}
+        style={{ backgroundColor: selectedColor }}
         className='hero bg-base-200'
       >
         <div className='hero-content flex-col lg:flex-row-reverse'>

@@ -10,7 +10,7 @@ function ImagePreview({ dataUrl }) {
   return dataUrl ? (
     <img src={dataUrl} alt='preview' style={{ width: 200, height: 200 }} />
   ) : (
-    <p>Pas de logo chargée.</p>
+    <p className='my-8 flex justify-center'>Votre logo sera chargée ici !</p>
   );
 }
 
@@ -35,9 +35,14 @@ export default function ImagePicker({ onUpload }) {
         accept='image/*'
         style={{ display: "none" }}
       />
-      <button onClick={() => fileInput.current.click()}>
-        Charger votre logo !
-      </button>
+      <div className='flex justify-center'>
+        <button
+          className='text-md rounded-lg border-2 border-pink-500 bg-transparent px-4 py-2 uppercase text-pink-500 transition-all duration-300 hover:border-pink-500 hover:bg-pink-500 hover:text-white hover:shadow-[0_0_0px_#fff,inset_0_0_0px_#fff,0_0_2px_#e74694,0_0_10px_#e74694,0_0_10px_#e74694] dark:text-white'
+          onClick={() => fileInput.current.click()}
+        >
+          Charger votre logo !
+        </button>
+      </div>
       <ImagePreview dataUrl={dataUrl} />
     </div>
   );
