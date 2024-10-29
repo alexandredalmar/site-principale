@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import React from "react";
 import PriceCard from "./PriceCard/PriceCard";
+import Button from "@/components/ui/button/Button";
 
 const priceItem = [
   {
@@ -38,7 +39,7 @@ const priceItem = [
       "Pour les créateurs ayant plusieurs idées qui souhaitent les tester et les affiner efficacement.",
     price: 8,
     monthly: "/mois",
-    buttonText: "Rejoindre en tant que Débutant",
+    buttonText: "Rejoindre en tant que supérieur",
     subTitle: "Ce qui est inclus",
     actions: [
       {
@@ -64,7 +65,7 @@ const priceItem = [
       "Pour les expéditeurs productifs qui veulent travailler plus efficacement.",
     price: 15,
     monthly: "/mois",
-    buttonText: "Rejoindre en tant que Débutant",
+    buttonText: "Rejoindre en tant qu'expediteur",
     subTitle: "Ce qui est inclus",
     actions: [
       {

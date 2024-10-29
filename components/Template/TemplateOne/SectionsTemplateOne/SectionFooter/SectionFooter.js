@@ -1,39 +1,100 @@
+import { Palette } from "lucide-react";
 import React from "react";
 
-const SectionFooter = ({ colors }) => {
+const SectionFooter = ({ colors, isColors, toggleColors }) => {
   return (
     <footer
-      style={{
-        backgroundColor: colors.lightVibrant,
-        color: colors.darkVibrant,
-      }}
-      className='footer flex flex-wrap gap-12 bg-base-200 p-10 text-base-content'
+      className={`footer flex flex-wrap gap-12 p-10 transition-all ${isColors ? "bg-white" : "bg-black"}`}
     >
       <nav>
-        <h6 className='footer-title'>Services</h6>
-        <a className='link-hover link'>Branding</a>
-        <a className='link-hover link'>Design</a>
-        <a className='link-hover link'>Marketing</a>
-        <a className='link-hover link'>Advertisement</a>
+        <h6
+          className={`footer-title ${isColors ? "text-black" : "text-white"}`}
+        >
+          Services
+        </h6>
+        <a
+          className={`link-hover link ${isColors ? "text-black" : "text-white"}`}
+        >
+          Branding
+        </a>
+        <a
+          className={`link-hover link ${isColors ? "text-black" : "text-white"}`}
+        >
+          Design
+        </a>
+        <a
+          className={`link-hover link ${isColors ? "text-black" : "text-white"}`}
+        >
+          Marketing
+        </a>
+        <a
+          className={`link-hover link ${isColors ? "text-black" : "text-white"}`}
+        >
+          Advertisement
+        </a>
       </nav>
       <nav>
-        <h6 className='footer-title'>Company</h6>
-        <a className='link-hover link'>About us</a>
-        <a className='link-hover link'>Contact</a>
-        <a className='link-hover link'>Jobs</a>
-        <a className='link-hover link'>Press kit</a>
+        <h6
+          className={`footer-title ${isColors ? "text-black" : "text-white"}`}
+        >
+          Company
+        </h6>
+        <a
+          className={`link-hover link ${isColors ? "text-black" : "text-white"}`}
+        >
+          About us
+        </a>
+        <a
+          className={`link-hover link ${isColors ? "text-black" : "text-white"}`}
+        >
+          Contact
+        </a>
+        <a
+          className={`link-hover link ${isColors ? "text-black" : "text-white"}`}
+        >
+          Jobs
+        </a>
+        <a
+          className={`link-hover link ${isColors ? "text-black" : "text-white"}`}
+        >
+          Press kit
+        </a>
       </nav>
       <nav>
-        <h6 className='footer-title'>Legal</h6>
-        <a className='link-hover link'>Terms of use</a>
-        <a className='link-hover link'>Privacy policy</a>
-        <a className='link-hover link'>Cookie policy</a>
+        <h6
+          className={`footer-title ${isColors ? "text-black" : "text-white"}`}
+        >
+          Legal
+        </h6>
+        <a
+          className={`link-hover link ${isColors ? "text-black" : "text-white"}`}
+        >
+          Terms of use
+        </a>
+        <a
+          className={`link-hover link ${isColors ? "text-black" : "text-white"}`}
+        >
+          Privacy policy
+        </a>
+        <a
+          className={`link-hover link ${isColors ? "text-black" : "text-white"}`}
+        >
+          Cookie policy
+        </a>
       </nav>
       <form>
-        <h6 className='footer-title'>Newsletter</h6>
+        <h6
+          className={`footer-title ${isColors ? "text-black" : "text-white"}`}
+        >
+          Newsletter
+        </h6>
         <fieldset className='form-control w-80'>
           <label className='label'>
-            <span className='label-text'>Enter your email address</span>
+            <span
+              className={`label-text ${isColors ? "text-black" : "text-white"}`}
+            >
+              Enter your email address
+            </span>
           </label>
           <div className='join'>
             <input
@@ -50,6 +111,12 @@ const SectionFooter = ({ colors }) => {
           </div>
         </fieldset>
       </form>
+      <button
+        onClick={toggleColors}
+        className='rounded border border-gray-400 bg-white p-2 shadow-md'
+      >
+        <Palette className='stroke-black' />
+      </button>
     </footer>
   );
 };

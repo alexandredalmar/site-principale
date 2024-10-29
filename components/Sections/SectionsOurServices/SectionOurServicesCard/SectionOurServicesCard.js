@@ -1,5 +1,7 @@
+"use client";
 import { Globe, Palette, ThumbsUp, Wrench } from "lucide-react";
 import React from "react";
+import { motion } from "framer-motion";
 
 const itemsServices = [
   {
@@ -28,12 +30,31 @@ const itemsServices = [
   },
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, filter: "blur(10px)" },
+  visible: (i) => ({
+    opacity: 1,
+    filter: "blur(0px)",
+    transition: {
+      delay: i * 0.3,
+      duration: 1,
+    },
+  }),
+};
+
 const SectionOurServicesCard = () => {
   return (
     <div className='h-auto'>
       <div className='grid grid-cols-1 gap-4 p-10 pt-28 sm:grid-cols-2'>
-        {itemsServices.map((item) => (
-          <div className='flex flex-col items-center gap-4 rounded-xl border border-gray-800 p-4'>
+        {itemsServices.map((item, index) => (
+          <motion.div
+            className='flex flex-col items-center gap-4 rounded-xl border border-gray-800 p-4'
+            initial='hidden'
+            animate='visible'
+            custom={index}
+            variants={cardVariants}
+            key={index}
+          >
             <span className='inline-block rounded-lg p-3'>
               <div className='inline-flex select-none items-center justify-center align-middle text-white'>
                 {item.icon}
@@ -46,7 +67,7 @@ const SectionOurServicesCard = () => {
             <p className='block text-sm text-gray-300 sm:mt-1 sm:text-base'>
               {item.description}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

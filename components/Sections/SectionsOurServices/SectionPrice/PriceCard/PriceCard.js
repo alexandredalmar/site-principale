@@ -1,3 +1,4 @@
+import Button from "@/components/ui/button/Button";
 import { Check } from "lucide-react";
 import React from "react";
 
@@ -5,7 +6,7 @@ const PriceCard = (props) => {
   return (
     <>
       {props.priceItem.map((item) => (
-        <div className='divide-y divide-slate-200 rounded-lg border border-slate-200 shadow-sm'>
+        <div className='divide-y divide-slate-200 rounded-lg border border-slate-200 shadow-sm odd:scale-90 even:border-sky-500 even:shadow-2xl even:shadow-sky-500'>
           <div className='p-6'>
             <h2 className='text-xl font-bold leading-6 text-white'>
               {item.title}
@@ -13,7 +14,7 @@ const PriceCard = (props) => {
             <p className='mt-2 text-base leading-tight text-white'>
               {item.description}
             </p>
-            <p className='mt-8'>
+            <p className='my-8'>
               <span className='text-4xl font-bold tracking-tighter text-white'>
                 {item.price}€
               </span>
@@ -22,12 +23,7 @@ const PriceCard = (props) => {
                 {item.monthly}
               </span>
             </p>
-            <a
-              href='/sign-up'
-              className='mt-8 block w-full rounded-md bg-blue-500 py-2 text-center text-sm font-semibold text-white'
-            >
-              {item.buttonText}
-            </a>
+            <Button link='#' styleType='secondary' text={item.buttonText} />
           </div>
           <div className='px-6 pb-8 pt-6'>
             <h3 className='text-sm font-bold uppercase tracking-wide text-white'>
