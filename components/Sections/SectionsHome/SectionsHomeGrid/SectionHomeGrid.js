@@ -7,21 +7,21 @@ import { motion } from "framer-motion";
 const items = [
   {
     src: "/img-exemple.png",
-    title: "Agence LLinares 1",
-    text: "Créateur de la Maison LLinares, il propose un réel-savoir faire sur tous types de produits.",
-    btn: "Voir le site",
+    title: "Nos créations",
+    text: "Digi House crée des sites web dans le style qui vous correspond",
+    btn: "En savoir +",
   },
   {
     src: "/img-exemple.png",
-    title: "Agence LLinares Immobilier 2",
-    text: "Créateur de la Maison LLinares, il propose un réel-savoir faire sur tous types de produits.",
-    btn: "Voir le site",
+    title: "Qui sommes nous ? ",
+    text: "Notre experience, notre histoire..",
+    btn: "En savoir +",
   },
   {
     src: "/img-exemple.png",
-    title: "Agence LLinares Immobilier 3",
-    text: "Créateur de la Maison LLinares, il propose un réel-savoir faire sur tous types de produits.",
-    btn: "Voir le site",
+    title: "Nous contacter",
+    text: "Pour faire connaissance et nous faire part de votre projet.",
+    btn: "Par ici",
   },
 ];
 
