@@ -7,22 +7,25 @@ import Link from "next/link";
 
 const items = [
   {
-    src: "/img-exemple.png",
+    src: "images/nos-modeles/GreenMoverz-model.png",
     title: "Nos créations",
     text: "Digi House crée des sites web dans le style qui vous correspond",
-    btn: "En savoir +",
+    btn: "découvrir",
+    link: "/nos-modeles",
   },
   {
-    src: "/img-exemple.png",
-    title: "Qui sommes nous ? ",
-    text: "Notre experience, notre histoire..",
+    src: "images/nos-modeles/impact-model.png",
+    title: "Entretenir votre site",
+    text: "Nous vous proposons de vous aider à faire evoluer votre site en prenant la main",
     btn: "En savoir +",
+    link: "En savoir +",
   },
   {
-    src: "/img-exemple.png",
+    src: "images/nos-modeles/lecompte-architecture-model.png",
     title: "Nous contacter",
     text: "Pour faire connaissance et nous faire part de votre projet.",
-    btn: "Par ici",
+    btn: "contact",
+    link: "/contact",
   },
 ];
 
