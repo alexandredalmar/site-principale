@@ -26,6 +26,8 @@ const NeonCursor = () => {
         sleepTimeCoefX: 0.0025,
         sleepTimeCoefY: 0.0025,
       });
+    } else {
+      console.error("L'élément avec l'ID 'app' est introuvable.");
     }
 
     // Nettoyage pour éviter la création de nouveaux canvas à chaque montage

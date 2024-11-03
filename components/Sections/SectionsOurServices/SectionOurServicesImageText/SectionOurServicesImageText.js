@@ -14,7 +14,7 @@ const SectionOurServicesImageText = () => {
           className='my-12 max-w-sm rounded-lg shadow-sm-light grayscale md:max-w-2xl'
         />
         <div>
-          <h1 className='my-8 border-l-8 pl-4 text-7xl font-bold md:text-9xl'>
+          <h1 className='text-gradient my-8 border-l-8 pl-4 text-7xl font-bold md:text-9xl'>
             <span className='text-sky-500 [text-shadow:_0_1px_0_rgb(235_0_0_/_40%)]'>
               N
             </span>

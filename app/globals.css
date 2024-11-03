@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .text-gradient {
+    @apply bg-custom-radial bg-clip-text text-transparent;
+  }
+}
 * {
   color: white;
 }
