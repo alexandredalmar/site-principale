@@ -1,0 +1,165 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition:
+    opacity 0.5s,
+    transform 0.5s;
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.info {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  text-align: left;
+}
+
+.place {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 0 3px #000;
+  position: relative;
+  padding-top: 20px;
+}
+
+.place::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  text-shadow: 0 0 3px #000;
+}
+
+.title-1 {
+  font-size: 3.5rem;
+}
+
+.title-2 {
+  font-size: 2.5rem;
+}
+
+.title-1,
+.title-2 {
+  text-transform: uppercase;
+  text-shadow: 0 0 3px #000;
+}
+
+.description {
+  font-size: 1rem;
+  max-width: 600px;
+  margin-top: 10px;
+  text-shadow: 0 0 3px #000;
+}
+
+.thumbnails {
+  position: absolute;
+  bottom: 100px;
+
+  display: flex;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.thumbnail {
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+  object-fit: cover;
+}
+
+.container__thumbnails:hover .thumbnail {
+  opacity: 1;
+  border: 2px solid #fff;
+  transform: scale(1);
+}
+
+.thumbnail.active {
+  opacity: 1;
+  border: 2px solid #fff;
+  transform: scale(1.1);
+}
+
+.container__thumbnails {
+  position: relative;
+}
+
+.container__thumbnails .content {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  translate: 0 -50%;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container__thumbnails .content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 0 3px #000;
+}
+
+.container__thumbnails .content h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-shadow: 0 0 3px #000;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.progress {
+  height: 100%;
+  background-color: #ecad29;
+  width: 0%;
+  transition: width 0.3s;
+}
