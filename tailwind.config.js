@@ -23,6 +23,9 @@ module.exports = {
         "button-danger": "#DC2626",
         "button-danger-hover": "#B91C1C",
       },
+      spacing: {
+        'custom-calc': "calc((100% - 1 * 1rem) / 2)"
+      }
     },
   },
   plugins: [require("daisyui"), require("flowbite/plugin")],

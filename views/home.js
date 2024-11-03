@@ -34,7 +34,7 @@ const HomePage = () => {
       </h3>
 
  
-      <NeonCursorDisplay />
+      
     
      
     </motion.div>
