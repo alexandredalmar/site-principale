@@ -23,6 +23,7 @@ const SectionOurServicesImageText = () => {
           <h2 className='text-3xl text-white'>
             Création de Sites Internet Performants
           </h2>
+
           <p className='py-6'>
             Nous sommes spécialisés dans la création de sites internet
             performants en utilisant la plateforme Payload. Notre équipe

@@ -25,7 +25,7 @@ const SectionHomeIntro = () => {
           <div className='video-docker relative left-0 top-0 h-full w-full overflow-hidden'>
             <video
               className='relative min-h-full min-w-full object-cover'
-              src='/video-exemple.mp4'
+              src='/mockup.mp4'
               type='video/mp4'
               autoPlay
               muted
