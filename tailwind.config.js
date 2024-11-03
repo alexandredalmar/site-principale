@@ -12,11 +12,8 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "custom-radial-blue":
+        "custom-radial":
           "radial-gradient(78.77% 78.77% at 71.71% 30.77%, #f0fcff 0%, #9bedff 67.21%, #98ecff 76.04%, #5be1ff 84.9%, #00bae2 94.79%)",
-          "custom-radial-pink":
-          "radial-gradient(78.77% 78.77% at 71.71% 30.77%, #fce3ec 0%, #f297b9 67.21%, #ec6e9a 76.04%, #e74694 84.9%, #a61a5d 94.79%);",
-  
       },
       colors: {
         "button-primary": "#ec4899" /* pink*/,

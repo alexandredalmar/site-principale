@@ -3,11 +3,8 @@
 @tailwind utilities;
 
 @layer utilities {
-  .text-gradient-blue {
-    @apply bg-custom-radial-blue bg-clip-text text-transparent;
-  }
-  .text-gradient-pink {
-    @apply bg-custom-radial-pink bg-clip-text text-transparent;
+  .text-gradient {
+    @apply bg-custom-radial bg-clip-text text-transparent;
   }
 }
 * {
