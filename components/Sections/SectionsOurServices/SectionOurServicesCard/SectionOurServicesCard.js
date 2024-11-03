@@ -36,7 +36,7 @@ const cardVariants = {
     opacity: 1,
     filter: "blur(0px)",
     transition: {
-      delay: i * 0.3,
+      delay: i * 0.5,
       duration: 1,
     },
   }),
