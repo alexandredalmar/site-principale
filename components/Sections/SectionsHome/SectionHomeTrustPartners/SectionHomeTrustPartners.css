@@ -1,0 +1,12 @@
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * var(--marquee-width)));
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
