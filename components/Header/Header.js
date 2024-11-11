@@ -1,4 +1,5 @@
 import { Home } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -45,7 +46,13 @@ const Header = () => {
           </ul>
         </div>
         <Link href='/' className='btn btn-ghost text-xl'>
-          <Home />
+          <Image
+            src='/images/logo/logo-digi-house-mini.png'
+            width={50}
+            height={50}
+            alt='logo initial'
+            className='object-contain transition-transform duration-300 hover:scale-110'
+          />
         </Link>
       </div>
       <div className='navbar-center hidden lg:flex'>
