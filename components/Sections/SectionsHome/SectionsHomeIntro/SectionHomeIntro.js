@@ -5,15 +5,15 @@ import Button from "@/components/ui/button/Button";
 const SectionHomeIntro = () => {
   return (
     <div>
-      <section className='relative z-20 flex items-center overflow-hidden bg-black'>
+      <section className='relative z-20 flex items-center overflow-hidden'>
         <div className='container relative mx-auto flex py-16'>
           <div className='relative z-20 flex flex-col justify-center'>
-            <span className='mb-12 h-2 w-20 bg-sky-800 dark:bg-white'></span>
-            <h1 className='  text-gradient-blue  text-sky-500  font-bebas-neue text-white-800 flex flex-col text-5xl font-black uppercase leading-none dark:text-white sm:text-6xl'>
+            <span className='mb-12 h-2 w-20 bg-black dark:bg-white'></span>
+            <h1 className='  text-black-500  font-bebas-neue  flex flex-col text-5xl font-black uppercase leading-none dark:text-white sm:text-6xl'>
               Créer votre avenir
-              <span className='text-1xl  text-pink-500  mb-5 sm:text-5xl'>Sur le web</span>
+              <span className='text-1xl  text-blakc-500  mb-5 sm:text-5xl'>Sur le web</span>
             </h1>
-            <p className=' text-white-700 text-sm dark:text-white sm:text-base'>
+            <p className=' text-white-700 text-sm dark:text-black sm:text-base'>
               La Maison Digital met à votre disposition les outils web les plus
               avancés du moment, à des prix défiant toute concurrence.
             </p>

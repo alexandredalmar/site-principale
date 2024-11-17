@@ -5,9 +5,9 @@ const Button = (props) => {
   const baseStyle = "btn";
   const styleMap = {
     primary:
-      " text-md rounded-lg border-2 border-pink-500 bg-transparent px-4 py-2 uppercase text-pink-500 hover:bg-pink-500 hover:text-white dark:text-white hover:border-pink-500 hover:shadow-[0_0_0px_#fff,inset_0_0_0px_#fff,0_0_2px_#e74694,0_0_10px_#e74694,0_0_10px_#e74694]",
+      " border-black rounded-none uppercase text-black bg-transparent hover:bg-transparent hover:border-black  dark:text-white ",
     secondary:
-      "text-md rounded-lg border-2 border-sky-500 bg-transparent px-4 py-2 uppercase text-sky-500 hover:bg-sky-500 hover:text-white dark:text-white hover:border-sky-500 hover:shadow-[0_0_0px_#fff,inset_0_0_0px_#fff,0_0_2px_#08f,0_0_10px_#08f,0_0_10px_#08f]",
+      " border-x-0 border-t-0 p-0  border-b-2   border-black  rounded-none uppercase text-black bg-transparent hover:bg-transparent hover:border-black  dark:text-white",
     danger:
       "bg-button-danger text-button-danger text-white hover:bg-button-danger-hover",
   };
