@@ -16,8 +16,13 @@ const pageVariants = {
 
 const HomePage = () => {
   return (
-    <motion.div initial='initial' animate='animate' variants={pageVariants}>
-       <SectionBannerText />
+    <motion.div
+      className='mx-auto flex max-w-96 flex-col gap-10 md:max-w-screen-md lg:max-w-screen-xl 2xl:max-w-screen-2xl'
+      initial='initial'
+      animate='animate'
+      variants={pageVariants}
+    >
+      <SectionBannerText />
       <SectionHomeIntro />
       <SectionHomeGrid />
       <SectionHomeTrustPartners />

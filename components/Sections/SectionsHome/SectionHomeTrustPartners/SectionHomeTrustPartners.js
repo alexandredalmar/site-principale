@@ -34,9 +34,7 @@ const SectionHomeTrustPartners = () => {
   return (
     <section className='h-auto max-w-full'>
       <div className='flex items-center justify-center'>
-        <h1 className='text-title-big pt-12 font-bold'>
-          Ils nous ont fait confiance
-        </h1>
+        <h3>Ils nous ont fait confiance</h3>
       </div>
       <div className='mt-8 w-full overflow-hidden'>
         <div ref={containerRef} className='animate-marquee flex space-x-8'>
