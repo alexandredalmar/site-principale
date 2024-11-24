@@ -19,12 +19,12 @@ const SectionBannerText = () => {
           className='flex h-auto w-2/3 justify-center object-contain'
         />
       </div>
-      <p className='text-2xl font-medium'>La Maison digital</p>
+      <p className='text-2xl font-medium text-white'>La Maison digital</p>
 
-      <p className='text-2xl font-medium'>
+      <p className='text-2xl font-medium  text-white'>
         Spécialisé dans la création de{" "}
-        <span className='text-sky-500'>site </span>
-        <span className='text-pink-500'>performant</span>
+        <span className="text-white">site </span>
+        <span className="text-white">performant</span>
       </p>
     </div>
   );
