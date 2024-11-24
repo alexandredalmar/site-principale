@@ -1,9 +1,9 @@
 "use client";
 
-import SectionsHomeBannerVideo from "@/components/Sections/SectionsHome/SectionsHomeBanner/SectionsHomeBannerVideo";
 import SectionHomeGrid from "@/components/Sections/SectionsHome/SectionsHomeGrid/SectionHomeGrid";
 import SectionHomeIntro from "@/components/Sections/SectionsHome/SectionsHomeIntro/SectionHomeIntro";
 import NeonCursorDisplay from "@/components/NeonCursorDisplay";
+import SectionBannerText from "@/components/Sections/SectionsHome/SectionsHomeBanner/SectionHomeBannerText/SectionBannerText.js";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -17,7 +17,7 @@ const pageVariants = {
 const HomePage = () => {
   return (
     <motion.div initial='initial' animate='animate' variants={pageVariants}>
-      <SectionsHomeBannerVideo />
+       <SectionBannerText />
       <SectionHomeIntro />
       <SectionHomeGrid />
       <SectionHomeTrustPartners />
