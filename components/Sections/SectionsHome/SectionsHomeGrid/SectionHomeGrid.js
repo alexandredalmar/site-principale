@@ -4,26 +4,27 @@ import Grid from "@/components/ui/Grid";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Button from "@/components/ui/button/Button";
 
 const items = [
   {
     src: "images/nos-modeles/GreenMoverz-model.png",
-    title: "Nos créations",
-    text: "Digi House crée des sites web dans le style qui vous correspond",
+    title: "Green Moverz",
+    text: "Un site de location de voiture spécialisée dans l'énergie verte",
     btn: "découvrir",
     link: "/nos-modeles",
   },
   {
     src: "images/nos-modeles/impact-model.png",
-    title: "Entretenir votre site",
-    text: "Nous vous proposons de vous aider à faire evoluer votre site en prenant la main",
+    title: "CBD shope",
+    text: "E-commer spécialisé dans le vente de cbd ",
     btn: "En savoir +",
     link: "En savoir +",
   },
   {
     src: "images/nos-modeles/lecompte-architecture-model.png",
-    title: "Nous contacter",
-    text: "Pour faire connaissance et nous faire part de votre projet.",
+    title: "Lecomte Architecture",
+    text: "Artchitect d'intérieur et de décoration",
     btn: "contact",
     link: "/contact",
   },
@@ -43,36 +44,50 @@ const cardVariants = {
 const SectionHomeGrid = () => {
   return (
     <>
-      <h2 className='w-full py-16 text-center text-5xl text-black-500 sm:text-6xl'>
-        Nos modeles
-      </h2>
-      <Grid>
-        {items.map((item, index) => (
-          <motion.div
-            key={item.title}
-            className='card card-compact w-96 overflow-hidden border-2 border-solid border-black-900 '
-            variants={cardVariants}
-            initial='hidden'
-            animate='visible'
-            custom={index}
-          >
-            <Link href={item.link}>
-              <figure>
-                <img src={item.src} alt='' />
-              </figure>
-              <div className='card-body'>
-                <h2 className='card-title'>{item.title}</h2>
-                <p>{item.text}</p>
-                <div className='card-actions justify-start'>
-                  <button className='text-md bg- mr-4 mt-4  font-medium uppercase text-black  border-b-2 border-black  '>
-                    {item.btn}
-                  </button>
+      <div className='rounded-xl bg-indigo-100 px-5 py-16'>
+        <h2 className='text-black-500 mb-8 w-full text-center text-5xl sm:text-6xl'>
+          Inspirez-vous de nos créations
+        </h2>
+        <Grid>
+          {items.map((item, index) => (
+            <motion.div
+              key={item.title}
+              className='border-black-900 card card-compact w-96 overflow-hidden border-2 border-solid'
+              variants={cardVariants}
+              initial='hidden'
+              animate='visible'
+              custom={index}
+            >
+              <Link href={item.link}>
+                <figure>
+                  <img src={item.src} alt='' />
+                </figure>
+                <div className='card-body'>
+                  <h2 className='card-title'>{item.title}</h2>
+                  <p>{item.text}</p>
+                  <div className='card-actions justify-start'>
+                    <button className='text-md bg- mr-4 mt-4 border-b-2 border-black font-medium uppercase text-black'>
+                      {item.btn}
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          </motion.div>
-        ))}
-      </Grid>
+              </Link>
+            </motion.div>
+          ))}
+        </Grid>
+        <div className='mt-8 flex-1 text-center'>
+          <p className='mb-4 w-full'>
+            Vous avez besoin d'un conseil ou vous souhaitez tout simplement nous
+            poser une question ?
+          </p>
+          <Button
+            className='w-full'
+            link='#'
+            styleType='primary'
+            text='Contactez-nous'
+          />
+        </div>
+      </div>
     </>
   );
 };

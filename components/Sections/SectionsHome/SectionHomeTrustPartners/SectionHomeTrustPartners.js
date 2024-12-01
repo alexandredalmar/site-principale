@@ -18,6 +18,15 @@ const itemsTrust = [
   {
     url: "/images/accueil/logoclient/LOGO-PARERGA-GIVI-AGENCE-DIGITALE-COMMUNICATION.png",
   },
+  {
+    url: "/images/accueil/logoclient/LOGO-LECOMTE-ARCHITECTURE.png",
+  },
+  {
+    url: "/images/accueil/logoclient/LOGO-LLINARES.webp",
+  },
+  {
+    url: "/images/accueil/logoclient/LOGO-PONTEIL.png",
+  },
 ];
 
 const SectionHomeTrustPartners = () => {
