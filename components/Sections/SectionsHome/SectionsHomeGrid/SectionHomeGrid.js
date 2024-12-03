@@ -45,7 +45,7 @@ const SectionHomeGrid = () => {
   return (
     <>
       <div className='rounded-xl bg-indigo-100 px-5 py-16'>
-        <h2 className='text-black-500 mb-8 w-full text-center text-5xl sm:text-6xl'>
+        <h2 className='text-black-500 mb-10 w-full text-center text-5xl sm:text-6xl'>
           Inspirez-vous de nos créations
         </h2>
         <Grid>

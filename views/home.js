@@ -6,6 +6,8 @@ import NeonCursorDisplay from "@/components/NeonCursorDisplay";
 import SectionBannerText from "@/components/Sections/SectionsHome/SectionsHomeBanner/SectionHomeBannerText/SectionBannerText.js";
 import SectionHomeContact from "@/components/Sections/SectionsHome/SectionHomeContact/SectionHomeContact.js";
 import SectionStepCreation from "@/components/Sections/SectionsHome/SectionStepCreation/SectionStepCreation.js";
+import SectionFaq from "@/components/Sections/SectionsHome/SectionFaq/SectionFaq.js";
+
 import React from "react";
 import { motion } from "framer-motion";
 import SectionHomeTrustPartners from "@/components/Sections/SectionsHome/SectionHomeTrustPartners/SectionHomeTrustPartners";
@@ -28,6 +30,7 @@ const HomePage = () => {
       <SectionHomeGrid />
       <SectionHomeContact />
       <SectionStepCreation />
+      <SectionFaq />
       <SectionHomeTrustPartners />
     </motion.div>
   );
