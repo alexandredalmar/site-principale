@@ -45,7 +45,7 @@ const cardVariants = {
 const SectionOurServicesCard = () => {
   return (
     <div className='h-auto'>
-      <div className='grid grid-cols-1 gap-4 p-10 pt-28 sm:grid-cols-2'>
+      <div className='grid grid-cols-1 gap-4 p-10 sm:grid-cols-2'>
         {itemsServices.map((item, index) => (
           <motion.div
             className='flex flex-col items-center gap-4 rounded-xl border border-gray-800 p-4'
@@ -56,15 +56,15 @@ const SectionOurServicesCard = () => {
             key={index}
           >
             <span className='inline-block rounded-lg p-3'>
-              <div className='inline-flex select-none items-center justify-center align-middle text-white'>
+              <div className='inline-flex select-none items-center justify-center align-middle text-base-100'>
                 {item.icon}
               </div>
             </span>
 
-            <h2 className='mt-2 text-base font-semibold text-white sm:text-2xl'>
+            <h2 className='mt-2 font-semibold text-base-100 sm:text-2xl'>
               {item.title}
             </h2>
-            <p className='block text-sm text-gray-300 sm:mt-1 sm:text-base'>
+            <p className='block text-sm text-base-100 sm:mt-1 sm:text-base'>
               {item.description}
             </p>
           </motion.div>

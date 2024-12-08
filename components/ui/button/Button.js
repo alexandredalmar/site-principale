@@ -5,9 +5,9 @@ const Button = (props) => {
   const baseStyle = "btn";
   const styleMap = {
     primary:
-      " border-black rounded-none uppercase text-black bg-transparent hover:bg-transparent hover:border-black  dark:text-white ",
+      " border-base-100 rounded-none uppercase text-base-100 bg-transparent hover:bg-transparent hover:border-base-100  dark:text-white ",
     secondary:
-      " border-x-0 border-t-0 p-0  border-b-2   border-black  rounded-none uppercase text-black bg-transparent hover:bg-transparent hover:border-black  dark:text-white",
+      " border-x-0 border-t-0 p-0  border-b-2   border-base-100  rounded-none uppercase text-base-100 bg-transparent hover:bg-transparent hover:border-black  dark:text-white",
     danger:
       "bg-button-danger text-button-danger text-white hover:bg-button-danger-hover",
   };

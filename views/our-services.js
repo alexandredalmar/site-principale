@@ -7,7 +7,7 @@ import React from "react";
 
 const OurServicesPage = () => {
   return (
-    <div>
+    <div className='mx-auto flex max-w-96 flex-col gap-20 transition-all md:max-w-screen-md lg:max-w-screen-xl 2xl:max-w-screen-2xl'>
       {/* <SectionOurServicesBanner /> */}
       <SectionOurServicesImageText />
       <SectionOurServicesCard />
