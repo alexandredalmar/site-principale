@@ -9,22 +9,12 @@ import SectionStepCreation from "@/components/Sections/SectionsHome/SectionStepC
 import SectionFaq from "@/components/Sections/SectionsHome/SectionFaq/SectionFaq.js";
 
 import React from "react";
-import { motion } from "framer-motion";
-import SectionHomeTrustPartners from "@/components/Sections/SectionsHome/SectionHomeTrustPartners/SectionHomeTrustPartners";
 
-const pageVariants = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1, transition: { duration: 5 } },
-};
+import SectionHomeTrustPartners from "@/components/Sections/SectionsHome/SectionHomeTrustPartners/SectionHomeTrustPartners";
 
 const HomePage = () => {
   return (
-    <motion.div
-      className='mx-auto flex max-w-96 flex-col gap-20 md:max-w-screen-md lg:max-w-screen-xl 2xl:max-w-screen-2xl'
-      initial='initial'
-      animate='animate'
-      variants={pageVariants}
-    >
+    <div className='mx-auto flex max-w-96 flex-col gap-20 md:max-w-screen-md lg:max-w-screen-xl 2xl:max-w-screen-2xl'>
       <SectionBannerText />
       <SectionHomeContact />
       <SectionHomeIntro />
@@ -32,7 +22,7 @@ const HomePage = () => {
       <SectionStepCreation />
       <SectionFaq />
       <SectionHomeTrustPartners />
-    </motion.div>
+    </div>
   );
 };
 
