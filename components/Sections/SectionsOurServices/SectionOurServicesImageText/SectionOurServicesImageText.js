@@ -20,11 +20,11 @@ const SectionOurServicesImageText = () => {
             </span>
             os <br /> <span className='text-pink-500'>S</span>ervices
           </h1>
-          <h2 className='text-3xl text-white'>
+          <h2 className='text-3xl text-base-100'>
             Création de Sites Internet Performants
           </h2>
 
-          <p className='py-6'>
+          <p className='py-6 text-base-100'>
             Nous sommes spécialisés dans la création de sites internet
             performants en utilisant la plateforme Payload. Notre équipe
             d'experts travaille avec vous pour concevoir et développer des sites
@@ -33,6 +33,7 @@ const SectionOurServicesImageText = () => {
             en ligne ou d'un portail personnalisé, nous avons les compétences
             pour transformer vos idées en réalité.
           </p>
+          <button className='btn'>Button</button>
         </div>
       </div>
     </div>
