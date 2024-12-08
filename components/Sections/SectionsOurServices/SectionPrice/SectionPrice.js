@@ -90,7 +90,9 @@ const priceItem = [
 const SectionPrice = () => {
   return (
     <div className='sm:align-center p-10 sm:flex sm:flex-col'>
-      <h1 className='my-12 text-center text-4xl font-bold'>Nos Tarifs</h1>
+      <h1 className='my-12 text-center text-4xl font-bold text-base-100'>
+        Nos Tarifs
+      </h1>
       <div className='relative flex self-center rounded-lg bg-slate-200 p-0.5'>
         <button
           type='button'

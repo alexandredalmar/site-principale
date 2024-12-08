@@ -2,6 +2,7 @@ import { Home } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import HeaderToggleThemeController from "./HeaderToggleThemeController/HeaderToggleThemeController";
 
 const Header = () => {
   return (
@@ -72,7 +73,7 @@ const Header = () => {
         </ul>
       </div>
       <div className='navbar-end'>
-        <a className='btn'>TEL</a>
+        <HeaderToggleThemeController />
       </div>
     </header>
   );

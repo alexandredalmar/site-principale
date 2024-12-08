@@ -10,7 +10,10 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html>
-      <body lang='fr' className='bg-white'>
+      <body
+        lang='fr'
+        className='overflow-x-hidden bg-base-content transition-all'
+      >
         <Header />
         <main>{children}</main>
         <Footer />
