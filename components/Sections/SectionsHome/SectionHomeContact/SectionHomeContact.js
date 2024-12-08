@@ -6,7 +6,7 @@ import Image from "next/image";
 const SectionHomeContact = () => {
   return (
     <div>
-      <section className='relative z-20 overflow-hidden rounded-xl bg-indigo-100 px-16 py-16'>
+      <section className='relative z-20 overflow-hidden rounded-xl bg-indigo-100 px-16 py-16 transition-all duration-500 hover:shadow-lg'>
         <div className='flex gap-10'>
           <div className='relative z-20 flex flex-col justify-center'>
             <h3 className='flex flex-col text-5xl dark:text-white sm:text-6xl'>

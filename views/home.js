@@ -26,9 +26,9 @@ const HomePage = () => {
       variants={pageVariants}
     >
       <SectionBannerText />
+      <SectionHomeContact />
       <SectionHomeIntro />
       <SectionHomeGrid />
-      <SectionHomeContact />
       <SectionStepCreation />
       <SectionFaq />
       <SectionHomeTrustPartners />
