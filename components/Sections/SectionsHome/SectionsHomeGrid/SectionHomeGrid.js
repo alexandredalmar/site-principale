@@ -8,21 +8,21 @@ import Button from "@/components/ui/button/Button";
 
 const items = [
   {
-    src: "images/nos-modeles/GreenMoverz-model.png",
+    src: "images/nos-modeles/model-greenmoverz.png",
     title: "Green Moverz",
     text: "Un site de location de voiture spécialisée dans l'énergie verte",
     btn: "découvrir",
     link: "/nos-modeles",
   },
   {
-    src: "images/nos-modeles/impact-model.png",
+    src: "images/nos-modeles/model-impact.png",
     title: "CBD shope",
     text: "E-commer spécialisé dans le vente de cbd ",
     btn: "En savoir +",
     link: "En savoir +",
   },
   {
-    src: "images/nos-modeles/lecompte-architecture-model.png",
+    src: "images/nos-modeles/model-leconte.png",
     title: "Lecomte Architecture",
     text: "Artchitect d'intérieur et de décoration",
     btn: "contact",
@@ -44,7 +44,7 @@ const cardVariants = {
 const SectionHomeGrid = () => {
   return (
     <>
-      <div className='rounded-xl bg-indigo-100 px-5 py-16'>
+      <div className='rounded-xl px-5 py-16'>
         <h2 className='text-black-500 mb-10 w-full text-center text-5xl sm:text-6xl'>
           Inspirez-vous de nos créations
         </h2>
@@ -59,7 +59,7 @@ const SectionHomeGrid = () => {
               custom={index}
             >
               <Link href={item.link}>
-                <figure>
+                <figure className='bg-indigo-50 p-4'>
                   <img src={item.src} alt='' />
                 </figure>
                 <div className='card-body'>

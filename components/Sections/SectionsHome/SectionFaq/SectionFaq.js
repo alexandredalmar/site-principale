@@ -37,7 +37,7 @@ const SectionFaq = () => {
 
   return (
     <div>
-      <section className='relative z-20 overflow-hidden rounded-xl bg-indigo-100 px-16 py-16'>
+      <section className='relative z-20 overflow-hidden rounded-xl bg-indigo-50 px-16 py-16'>
         <h3 className='text-center'>FAQ</h3>
         <div className='mx-auto max-w-screen-md p-10 dark:bg-gray-800'>
           {faqItems.map((item) => (

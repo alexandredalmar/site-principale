@@ -17,7 +17,7 @@ const HomePage = () => {
     <div className='mx-auto flex max-w-96 flex-col gap-20 md:max-w-screen-md lg:max-w-screen-xl 2xl:max-w-screen-2xl'>
       <SectionBannerText />
       <SectionHomeContact />
-      <SectionHomeIntro />
+      {/* <SectionHomeIntro />*/}
       <SectionHomeGrid />
       <SectionStepCreation />
       <SectionFaq />

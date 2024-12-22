@@ -1,11 +1,11 @@
 import React from "react";
 
 const StepCard = ({ number, title, description }) => (
-  <div className='md:w-[calc(33.333% - 32px)] w-full rounded-lg bg-indigo-500 p-8'>
-    <h4 className='mb-3 text-xl font-bold text-white'>
+  <div className='md:w-[calc(33.333% - 32px)] w-full rounded-lg bg-indigo-50 p-8 shadow-lg'>
+    <h4 className='mb-3 text-xl font-bold text-black'>
       {number}. {title}
     </h4>
-    <p className='text-white'>{description}</p>
+    <p className='text-black'>{description}</p>
   </div>
 );
 
@@ -51,7 +51,7 @@ const SectionStepCreation = () => {
 
   return (
     <div>
-      <section className='relative z-20 overflow-hidden rounded-xl bg-indigo-100 px-16 py-16'>
+      <section className='relative z-20 overflow-hidden rounded-xl px-16 py-16'>
         <div className='mb-10 text-center'>
           <h3 className='text-5xl'>
             Comment ça marche ? Les étapes de votre site web
