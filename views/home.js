@@ -1,12 +1,12 @@
 "use client";
 
-import SectionHomeGrid from "@/components/Sections/SectionsHome/SectionsHomeGrid/SectionHomeGrid";
 import SectionHomeIntro from "@/components/Sections/SectionsHome/SectionsHomeIntro/SectionHomeIntro";
 import NeonCursorDisplay from "@/components/NeonCursorDisplay";
 import SectionBannerText from "@/components/Sections/SectionsHome/SectionsHomeBanner/SectionHomeBannerText/SectionBannerText.js";
 import SectionHomeContact from "@/components/Sections/SectionsHome/SectionHomeContact/SectionHomeContact.js";
 import SectionStepCreation from "@/components/Sections/SectionsHome/SectionStepCreation/SectionStepCreation.js";
-import SectionFaq from "@/components/Sections/SectionsHome/SectionFaq/SectionFaq.js";
+import SectionFaq from "@/components/Sections/SectionFaq/SectionFaq.js";
+import SectionWebsiteContact from "@/components/Sections/SectionsHome/SectionWebsiteContact/SectionWebsiteContact.js";
 
 import React from "react";
 
@@ -18,7 +18,7 @@ const HomePage = () => {
       <SectionBannerText />
       <SectionHomeContact />
       {/* <SectionHomeIntro />*/}
-      <SectionHomeGrid />
+      <SectionWebsiteContact />
       <SectionStepCreation />
       <SectionFaq />
       <SectionHomeTrustPartners />

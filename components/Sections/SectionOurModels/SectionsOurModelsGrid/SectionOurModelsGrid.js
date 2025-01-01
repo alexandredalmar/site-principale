@@ -68,7 +68,7 @@ const SectionHomeGrid = () => {
     <>
       <div className='rounded-xl py-16'>
         <h2 className='text-black-500 mb-10 w-full text-center text-5xl sm:text-6xl'>
-          Inspirez-vous de nos créations
+          Inspirez-vous
         </h2>
         <Grid>
           {items.map((item, index) => (

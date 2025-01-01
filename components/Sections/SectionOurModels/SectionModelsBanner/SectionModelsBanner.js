@@ -9,9 +9,10 @@ const SectionBannerText = () => {
           La Maison <span className='text-white'>Digital</span>
         </p>
 
-        <p className='text-5xl font-medium'>
-          Spécialisé dans la création de <span>site </span>
-          <span>performant</span>
+        <p className='mb-3 text-5xl font-medium'>Découvrez nos créations</p>
+        <p>Vous avez besoin de renseignement ? </p>
+        <p>
+          Nous sommes la pour vous aider <span>Contactez-nous</span>
         </p>
       </div>
 
